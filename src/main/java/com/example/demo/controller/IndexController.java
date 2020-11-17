@@ -17,4 +17,10 @@ public class IndexController {
         modelAndView.setViewName("index/index");
         return modelAndView;
     }
+
+    @RequestMapping("test")
+    public String test(){
+        String str = "jie";
+        return str;
+    }
 }

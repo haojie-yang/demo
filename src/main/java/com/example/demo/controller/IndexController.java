@@ -19,8 +19,8 @@ public class IndexController {
     }
 
     @RequestMapping("test")
-    public String test(){
-        String str = "jie";
-        return str;
+    public ModelAndView test(ModelAndView modelAndView){
+        modelAndView.setViewName("index/color");
+        return modelAndView;
     }
 }

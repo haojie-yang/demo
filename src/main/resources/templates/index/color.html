@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<table id="LAY-app-list" class="layui-table"></table>
+<script src="/layui/layui.js"></script>
+<link rel="stylesheet" type="text/css" href="/layui/css/layui.css"/>
+<script type="text/javascript">
+    layui.use('table', function(){
+        var table = layui.table;
+
+        //第一个实例
+        table.render({
+            elem: '#LAY-app-list',
+            url: '/color/create',
+            method: 'get',
+            cols: [
+                [
+                    {field: 'red1', title: 'red1', width: '10%'},
+                    {field: 'red2', title: 'red2', width: '10%'},
+                    {field: 'red3', title: 'red3', width: '10%'},
+                    {field: 'red4', title: 'red4', width: '10%'},
+                    {field: 'red5', title: 'red5', width: '10%'},
+                    {field: 'red6', title: 'red6', width: '10%'},
+                    {field: 'blue', title: 'blue', width: '10%'}
+                ]
+            ]
+        })
+    })
+</script>
+</body>
+</html>
